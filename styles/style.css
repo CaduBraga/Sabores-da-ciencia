@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #F0F0F0;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    width: 60px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    color: #2E2E2E;
+}
