@@ -42,17 +42,21 @@ li {
     color: #2E2E2E;
 }
 
+a {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
 .reserva {
-    border: 2px #F0F0F0;
     border-radius: 5%;
     color: #2E2E2E;
     padding: 10px;
     background-color: #f0f0f0;
 }
 
-a {
+.reserva:hover {
+    background-color: #94D2BD;
     color: #F0F0F0;
-    text-decoration: none;
 }
 
 .inicio {
@@ -63,15 +67,20 @@ a {
     background-position: center;
 }
 
-.inicio h1, h3 {
+.inicio h1,
+h3 {
     font-size: 50px;
     color: #F0F0F0;
     max-width: 33%;
-    margin: 0px;
+    margin: 0;
     margin-left: 10px;
 }
 
 .inicio h3 {
     font-size: 20px;
     margin-bottom: 30px;
+}
+
+footer {
+    background-color: #0c1b2e;
 }
