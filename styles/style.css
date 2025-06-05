@@ -87,7 +87,7 @@ footer ul {
 .copyright {
     display: flex;
     color: #F0F0F0;
-    font-size: 10px;
+    font-size: 13px;
     justify-content: center;
 }
 
@@ -260,7 +260,7 @@ footer ul {
     border-radius: 12px;
 }
 
-.prato:hover {
+.prato:hover, .avaliacao:hover{
     transform: scale(1.03);
 }
 
