@@ -92,7 +92,7 @@ footer ul {
 }
 
 .inicio {
-    background-image: url(/imagens/background.jpg);
+    background-image: url(/assets/imagens/background.jpg);
     object-fit: cover;
     width: 100%;
     height: 300px;
@@ -116,7 +116,7 @@ footer ul {
 }
 
 .reserva {
-    border-radius: 5%;
+    border-radius: 10px;
     color: #2E2E2E;
     padding: 10px;
     background-color: #f0f0f0;
@@ -164,7 +164,7 @@ footer ul {
 
 .novidades input[type="email"] {
     border: 1px solid #F0F0F0;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .novidades input[type="submit"] {
@@ -172,7 +172,7 @@ footer ul {
     background-color: #2E2E2E;
     color: #F0F0F0;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .novidades input[type="submit"]:hover {
@@ -199,7 +199,7 @@ footer ul {
 .avaliacao {
     background-color: #F0F0F0;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
     max-width: 250px;
     color: #2E2E2E;
 }
@@ -207,8 +207,6 @@ footer ul {
 .avaliacao p {
     color: #2E2E2E;
 }
-
-/* REVER */
 
 .destaques {
     background-color: #f0f0f0;
@@ -235,16 +233,16 @@ footer ul {
     flex-wrap: wrap;
 }
 
-.ver-mais {
+.verMais {
     display: inline-block;
     background-color: #f0f0f0;
     color: #2E2E2E;
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 10px;
     font-size: 14px;
 }
 
-.ver-mais:hover {
+.verMais:hover {
     background-color: #2E2E2E;
     color: #f0f0f0;
 }
@@ -257,11 +255,13 @@ footer ul {
     background-color: #0c1b2e;
     padding: 10px;
     width: 30%;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
-.prato:hover, .avaliacao:hover{
+.prato:hover,
+.avaliacao:hover {
     transform: scale(1.03);
+    /* aumenta o ícone ao passar o mouse por cima */
 }
 
 .prato h2 {
@@ -280,30 +280,30 @@ footer ul {
 
 .prato img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
     height: 250px;
     object-fit: cover;
 }
 
 /* TERMINAR */
 
-.destaque-aside {
+aside {
     background-color: #2E2E2E;
     color: #F0F0F0;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
     margin: 30px 0;
     flex: 1;
 }
 
-.destaque-aside h2 {
+aside h2 {
     font-size: 22px;
     margin-bottom: 10px;
     font-family: 'Playfair Display', serif;
 }
 
-.destaque-aside p {
+aside p {
     font-size: 16px;
     margin-bottom: 20px;
 }
@@ -312,7 +312,7 @@ footer ul {
     background-color: #F0F0F0;
     color: #2E2E2E;
     padding: 10px 20px;
-    border-radius: 6px;
+    border-radius: 10px;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s;
@@ -324,7 +324,7 @@ footer ul {
 
 .video-container video {
     width: 100%;
-    border-radius: 6px;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
@@ -343,7 +343,7 @@ footer ul {
     padding: 10px;
     margin: 5px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .form-reserva input[type="submit"] {

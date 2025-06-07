@@ -7,7 +7,7 @@ Descrição: Bife grelhado servido com anéis de cebola empilhados (representand
 
 ## 🌌 2. Espaguete de Einstein
 ### Inspirado em: Albert Einstein (Teoria da Relatividade)
-Descrição: Espaguete ao molho branco com “curvatura de tempo-espaço” — servido em espiral com um “buraco negro” (almôndega recheada no centro).  
+Descrição: Espaguete ao molho bolonhesa com “curvatura de tempo-espaço” — servido em espiral com um “buraco negro” (almôndega recheada no centro).  
 > Por que o nome? A apresentação imita a distorção do espaço-tempo e homenageia sua genialidade.
 
 ## 🧬 3. Lasanha de Rosalind
