@@ -12,11 +12,16 @@ li {
 }
 
 h1,
-h2,
 p,
 a {
     color: #F0F0F0;
     text-decoration: none;
+}
+
+h2 {
+    color: #0c1b2e;
+    margin-left: 40px;
+    font-size: 40px;
 }
 
 img {
@@ -27,19 +32,10 @@ img {
 }
 
 hr {
-    border: none;
+    width: 100%;
     height: 1px;
     background-color: #f0f0f0;
-}
-
-input[type="email"] {
-  font-size: 1rem;
-  border: 1px solid #2E2E2E;
-  border-radius: 10px;
-}
-input[type="email"]::placeholder {
-  color: #2E2E2E;
-}
+  }
 
 /* Header */
 header {
@@ -71,10 +67,10 @@ ul {
 
 /* Início */
 .inicio {
-    background-image: url(/assets/imagens/background.jpg);
+    background-image: url(../assets/imagens/background.jpg);
     object-fit: cover;
     width: 100%;
-    height: 300px;
+    height: 250px;
     background-position: center;
 }
 
@@ -96,9 +92,6 @@ ul {
 }
 
 /* Principal */
-.principal {
-    display: flex;
-}
 
 .prato {
     background-color: #0c1b2e;
@@ -107,125 +100,25 @@ ul {
     border-radius: 10px;
 }
 
-.prato h2,
+.prato h3,
 .prato p {
     color: #f0f0f0;
 }
 
-.prato h2 {
-    margin: 10px;
+.prato:hover{
+    transform: scale(1.03);
 }
 
 .preco {
     font-weight: bold;
 }
 
-/* Destaques */
-.destaques {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 10px;
-}
-
-.destaques h1 {
-    font-size: 40px;
-    margin: 0;
-}
-
-.destaques p {
-    max-width: 50%;
-    margin: 10px auto;
-}
-
-.cardapioDestaque {
+.cardapio {
     display: flex;
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
-}
-
-.verMais {
-    background-color: #f0f0f0;
-    color: #2E2E2E;
-    padding: 8px;
-    border-radius: 10px;
-    font-size: 14px;
-}
-
-.verMais:hover {
-    background-color: #2E2E2E;
-    color: #f0f0f0;
-}
-
-/* Novidades */
-.novidades {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0f0f0;
-    padding: 10px;
-}
-
-.novidades h1,
-.novidades p {
-    color: #2E2E2E;
-}
-
-.novidades h1 {
-    font-size: 40px;
     margin: 10px;
-}
-
-.novidades form {
-    display: flex;
-    gap: 10px;
-}
-
-.novidades input[type="submit"] {
-    padding: 15px;
-    background-color: #2E2E2E;
-    color: #F0F0F0;
-    border: none;
-    border-radius: 10px;
-}
-
-.novidades input[type="submit"]:hover {
-    background-color: #94D2BD;
-}
-
-/* Avaliações */
-.avaliacoes {
-    padding: 10px 10px 25px;
-    text-align: center;
-    background-color: #2E2E2E;
-}
-
-.avaliacao:hover {
-    background-color: #94D2BD;
-}
-
-.avaliacoes h1 {
-    margin: 0;
-    font-size: 40px;
-}
-
-.grupoAvaliacoes {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.avaliacao {
-    background-color: #F0F0F0;
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 250px;
-    color: #2E2E2E;
-}
-
-.avaliacao p {
-    color: #2E2E2E;
 }
 
 /* Reserva e Horários */
@@ -234,6 +127,7 @@ ul {
     color: #2E2E2E;
     padding: 10px;
     background-color: #f0f0f0;
+    margin: 10px;
 }
 
 .reserva:hover {
@@ -250,21 +144,6 @@ ul {
     max-width: 300px;
     flex-direction: column;
     margin: 0 auto;
-}
-
-/* Aside */
-aside {
-    background-color: #0c1b2e;
-    color: #F0F0F0;
-    padding: 10px;
-    text-align: center;
-}
-
-.horariosAside {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
 /* Footer */
@@ -303,19 +182,6 @@ footer ul {
     justify-content: center;
 }
 
-/* Formulário */
-.formulario {
-    display: flex;
-    justify-items: center;
-}
-
-/* Hovers */
-.prato:hover,
-.avaliacao:hover,
-form input[type="submit"]:hover {
-    transform: scale(1.03);
-}
-
 /* Reboot CSS */
 html {
     line-height: 1.15;
@@ -336,11 +202,10 @@ html {
   }
   
   hr {
-    border: none;
-    width: 100%;
-    background-color: #f0f0f0;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
   }
-  
   
   pre, code, kbd, samp {
     font-family: monospace, monospace;
