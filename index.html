@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Página inicial</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/styleHome.css" />
 </head>
 
 <body>
@@ -50,10 +50,10 @@
                     </div>
 
                     <div class="prato">
-                        <img src="assets/imagens/pratos/eisten.jpg" alt="Prato inspirado em Albert Einstein">
+                        <img src="assets/imagens/pratos/einstein.jpg" alt="Prato inspirado em Albert Einstein">
                         <h2>Espaguete de Einstein</h2>
                         <p class="descricao">Espaguete ao molho bolonhesa servido em espiral, com almôndega recheada no
-                            centro — o nosso “buraco negro”.</p>
+                            centro.</p>
                         <p class="preco">R$ 36,00</p>
                         <a href="destinos/cardapio.html" class="verMais">Ver mais</a>
                     </div>
@@ -70,8 +70,8 @@
                     <div class="prato">
                         <img src="assets/imagens/pratos/rosalind.jpg" alt="Lasanha inspirada em Rosalind Franklin">
                         <h2>Lasanha de Rosalind</h2>
-                        <p class="descricao">Lasanha com camadas claramente visíveis de ingredientes coloridos,
-                            simulando a estrutura helicoidal do DNA em corte.</p>
+                        <p class="descricao">Lasanha com camadas visíveis de ingredientes coloridos,
+                            simulando a estrutura do DNA.</p>
                         <p class="preco">R$ 36,00</p>
                         <a href="destinos/cardapio.html" class="verMais">Ver mais</a>
                     </div>
@@ -97,30 +97,36 @@
             </section>
 
             <aside>
-                <div class="video-container">
-                    <video src="assets/videos/videoAside.mp4" controls></video>
+                <video src="assets/videos/videoAside.mp4" controls></video>
+                <h2>Horários de Funcionamento</h2>
+                <div class="horariosAside">
+                    <div class="horarios">
+                        <p>Segunda</p>
+                        <p>Fechado</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Terça - Quinta</p>
+                        <p>18h00 - 23h00</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Sexta - Domingo</p>
+                        <p>18h00 - 00h30</p>
+                    </div>
+                    <div class="horarios">
+                        <p>Feriados</p>
+                        <p>18h00 - 23h30</p>
+                    </div>
                 </div>
-
-                <div class="horarios-aside">
-                    <h2>Horários de Funcionamento</h2>
-                    <ul>
-                        <li>Segunda: Fechado</li>
-                        <li>Terça a Quinta: 18h - 23h</li>
-                        <li>Sexta a Domingo: 18h - 00h30</li>
-                        <li>Feriados: 18h - 23h30</li>
-                    </ul>
-                </div>
-
-                <div class="form-reserva">
-                    <h2>Reservar Mesa</h2>
-                    <form action="destinos/reserva.html">
-                        <input type="text" placeholder="Seu nome" required>
-                        <input type="email" placeholder="Seu e-mail" required>
-                        <input type="date" required>
-                        <input type="time" required>
-                        <input type="submit" value="Reservar agora">
-                    </form>
-                </div>
+                <h2>Reservar Mesa</h2>
+                <form action="destinos/reserva.html">
+                    <input type="text" placeholder="Seu nome" required />
+                    <input type="email" placeholder="Seu e-mail" required />
+                    <input type="date" required />
+                    <input type="time" required />
+                    <input type="number" placeholder="Número de pessoas" required />
+                    <input type="textarea" placeholder="Observações" />
+                    <input type="submit" value="Reservar agora" />
+                </form>
             </aside>
         </div>
 

@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 header {
@@ -17,7 +18,7 @@ header {
     display: flex;
     align-items: center;
     font-family: 'Playfair Display', serif;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 #logo img {
@@ -44,6 +45,10 @@ p,
 a {
     color: #F0F0F0;
     text-decoration: none;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 input::placeholder {
@@ -103,7 +108,7 @@ footer ul {
 .inicio h2 {
     margin: 0 0 0 10px;
     color: #F0F0F0;
-    max-width: 30%;
+    max-width: 35%;
 }
 
 .inicio h1 {
@@ -111,7 +116,6 @@ footer ul {
 }
 
 .inicio h2 {
-    font-size: 20px;
     margin-bottom: 30px;
 }
 
@@ -159,11 +163,12 @@ footer ul {
 
 .novidades form {
     display: flex;
+    flex-direction: row;
     gap: 10px;
 }
 
 .novidades input[type="email"] {
-    border: 1px solid #F0F0F0;
+    border: none;
     border-radius: 10px;
 }
 
@@ -176,7 +181,7 @@ footer ul {
 }
 
 .novidades input[type="submit"]:hover {
-    background-color: #94D2BD;
+    background-color: #0c1b2e;
 }
 
 .avaliacoes {
@@ -234,10 +239,9 @@ footer ul {
 }
 
 .verMais {
-    display: inline-block;
     background-color: #f0f0f0;
     color: #2E2E2E;
-    padding: 10px;
+    padding: 6px;
     border-radius: 10px;
     font-size: 14px;
 }
@@ -254,14 +258,8 @@ footer ul {
 .prato {
     background-color: #0c1b2e;
     padding: 10px;
-    width: 30%;
+    width: 45%;
     border-radius: 10px;
-}
-
-.prato:hover,
-.avaliacao:hover {
-    transform: scale(1.03);
-    /* aumenta o ícone ao passar o mouse por cima */
 }
 
 .prato h2 {
@@ -285,74 +283,58 @@ footer ul {
     object-fit: cover;
 }
 
-/* TERMINAR */
-
 aside {
-    background-color: #2E2E2E;
+    background-color: #0c1b2e;
     color: #F0F0F0;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 30px 0;
-    flex: 1;
-}
-
-aside h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    font-family: 'Playfair Display', serif;
-}
-
-aside p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.botao-aside {
-    background-color: #F0F0F0;
-    color: #2E2E2E;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.botao-aside:hover {
-    background-color: #94D2BD;
-}
-
-.video-container video {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.horarios-aside ul {
-    padding-left: 15px;
-    margin-bottom: 20px;
-}
-
-.horarios-aside li {
-    margin-bottom: 5px;
-    font-size: 14px;
-}
-
-.form-reserva input {
-    width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prato:hover,
+.avaliacao:hover,
+form input[type="submit"]:hover {
+    transform: scale(1.03);
+    /* aumenta o ícone ao passar o mouse por cima */
+}
+
+form {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"],
+form input[type="textarea"] {
+    padding: 10px;
+    border: 1px solid #2E2E2E;
+    border-radius: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #0c1b2e;
+    color: #f0f0f0;
+    padding: 15px;
     border: none;
     border-radius: 10px;
 }
 
-.form-reserva input[type="submit"] {
-    background-color: #F0F0F0;
-    color: #2E2E2E;
-    font-weight: bold;
-    cursor: pointer;
+form input[type="submit"]:hover {
+    background-color: #2E2E2E;
 }
 
-.form-reserva input[type="submit"]:hover {
-    background-color: #94D2BD;
+.horariosAside {
+    margin: 15px;
 }
