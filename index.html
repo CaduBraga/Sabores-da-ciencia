@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <div id="logo"><img src="assets/imagens/logo.png" alt="Logo do Sabores da Ciência com um símbolo de átomo.">
+        <div id="logo"><img src="/assets/imagens/logo.png" alt="Logo do Sabores da Ciência com um símbolo de átomo.">
             <h1>Sabores da Ciência</h1>
         </div>
         <nav>
@@ -27,10 +27,12 @@
         <section class="inicio">
             <h1>Cada prato é uma nova descoberta</h1>
             <h2>Uma jornada gastronômica guiada pelos maiores nomes da ciência.</h2>
-            <ul>
-                <li><a href="destinos/cardapio.html">Ver Cardápio</a></li>
-                <li><a class="reserva" href="destinos/reserva.html">Reservar mesa</a></li>
-            </ul>
+            <div class="linksInicio">
+                <ul>
+                    <li><a href="destinos/cardapio.html">Ver Cardápio</a></li>
+                    <li><a class="reserva" href="destinos/reserva.html">Reservar mesa</a></li>
+                </ul>
+            </div>
         </section>
 
         <div class="principal">
@@ -41,7 +43,7 @@
 
                 <div class="cardapio-destaque">
                     <div class="prato">
-                        <img src="assets/imagens/pratos/bohr.jpg" alt="Prato inspirado em Niels Bohr">
+                        <img src="/assets/imagens/cardapio/pratos/bohr.jpg" alt="Prato inspirado em Niels Bohr">
                         <h2>Bife de Bohr</h2>
                         <p class="descricao">Bife grelhado com anéis de cebola empilhados, representando os níveis de
                             energia dos elétrons.</p>
@@ -50,7 +52,8 @@
                     </div>
 
                     <div class="prato">
-                        <img src="assets/imagens/pratos/einstein.jpg" alt="Prato inspirado em Albert Einstein">
+                        <img src="/assets/imagens/cardapio/pratos/einstein.jpg"
+                            alt="Prato inspirado em Albert Einstein">
                         <h2>Espaguete de Einstein</h2>
                         <p class="descricao">Espaguete ao molho bolonhesa servido em espiral, com almôndega recheada no
                             centro.</p>
@@ -59,7 +62,7 @@
                     </div>
 
                     <div class="prato">
-                        <img src="assets/imagens/pratos/oswaldo.jpg" alt="Prato inspirado em Oswaldo Cruz">
+                        <img src="/assets/imagens/cardapio/pratos/oswaldo.jpg" alt="Prato inspirado em Oswaldo Cruz">
                         <h2>Hambúrguer de Oswaldo</h2>
                         <p class="descricao">Hambúrguer artesanal com alface, tomate e molho de alho — uma explosão de
                             sabor e proteção.</p>
@@ -68,7 +71,8 @@
                     </div>
 
                     <div class="prato">
-                        <img src="assets/imagens/pratos/rosalind.jpg" alt="Lasanha inspirada em Rosalind Franklin">
+                        <img src="/assets/imagens/cardapio/pratos/rosalind.jpg"
+                            alt="Lasanha inspirada em Rosalind Franklin">
                         <h2>Lasanha de Rosalind</h2>
                         <p class="descricao">Lasanha com camadas visíveis de ingredientes coloridos,
                             simulando a estrutura do DNA.</p>
@@ -77,7 +81,7 @@
                     </div>
 
                     <div class="prato">
-                        <img src="assets/imagens/pratos/darwin.jpg" alt="Tábua inspirada em Darwin">
+                        <img src="/assets/imagens/cardapio/pratos/darwin.jpg" alt="Tábua inspirada em Darwin">
                         <h2>Tábua de Darwin</h2>
                         <p class="descricao">Seleção de queijos e frios apresentados em ordem de complexidade crescente
                             — "evoluindo" no sabor.</p>
@@ -86,7 +90,8 @@
                     </div>
 
                     <div class="prato">
-                        <img src="assets/imagens/pratos/galileu.jpg" alt="Frango inspirado em Galileu Galilei">
+                        <img src="/assets/imagens/cardapio/pratos/galileu.jpg"
+                            alt="Frango inspirado em Galileu Galilei">
                         <h2>Frango Galileano</h2>
                         <p class="descricao">Frango assado em formato espiral, com especiarias alinhadas como planetas
                             em órbita.</p>
@@ -97,7 +102,7 @@
             </section>
 
             <aside>
-                <video src="assets/videos/videoAside.mp4" controls></video>
+                <video src="/assets/videos/videoAside.mp4" controls></video>
                 <h2>Horários de Funcionamento</h2>
                 <div class="horariosAside">
                     <div class="horarios">
@@ -118,14 +123,39 @@
                     </div>
                 </div>
                 <h2>Reservar Mesa</h2>
-                <form action="destinos/reserva.html">
-                    <input type="text" placeholder="Seu nome" required />
-                    <input type="email" placeholder="Seu e-mail" required />
-                    <input type="date" required />
-                    <input type="time" required />
-                    <input type="number" placeholder="Número de pessoas" required />
-                    <input type="textarea" placeholder="Observações" />
-                    <input type="submit" value="Reservar agora" />
+                <!-- aprendi a utilizar o formspree e decidi implementá-lo no meu código -->
+                <form id="formularioReserva" action="https://formspree.io/f/xpwrdgvq" method="POST">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div>
+                        <label for="email">Seu Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+                    <div>
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                    <div>
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora" required>
+                    </div>
+                    <div>
+                        <label for="pessoas">Número de pessoas:</label>
+                        <input type="number" id="pessoas" name="pessoas" required>
+                    </div>
+                    <div>
+                        <label for="observacoes">Observações:</label>
+                        <textarea id="observacoes" name="observacoes"></textarea>
+                    </div>
+                    <div class="button-group">
+                        <button type="submit">Enviar</button>
+                    </div>
                 </form>
             </aside>
         </div>
@@ -182,7 +212,7 @@
     <footer>
         <div class="conteudoFooter">
             <div class="slogan">
-                <div id="logo"><img src="assets/imagens/logo.png"
+                <div id="logo"><img src="/assets/imagens/logo.png"
                         alt="Logo do Sabores da Ciência com um símbolo de átomo.">
                     <h1>Sabores da Ciência</h1>
                 </div>

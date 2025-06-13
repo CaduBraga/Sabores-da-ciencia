@@ -26,17 +26,17 @@ header {
     height: auto;
 }
 
-ul,
-li {
-    list-style: none;
-    color: #2E2E2E;
-}
-
-ul {
+nav ul {
     display: flex;
     align-items: center;
     gap: 15px;
     margin: 10px;
+}
+
+ul,
+li {
+    list-style: none;
+    color: #2E2E2E;
 }
 
 h1,
@@ -119,10 +119,16 @@ footer ul {
     margin-bottom: 30px;
 }
 
+.linksInicio ul {
+    display: flex;
+    gap: 10px;
+}
+
 .reserva {
     border-radius: 10px;
     color: #2E2E2E;
     padding: 10px;
+    margin: 10px;
     background-color: #f0f0f0;
 }
 
@@ -304,12 +310,27 @@ form input[type="submit"]:hover {
 }
 
 form {
-    padding: 10px;
-    background-color: #f0f0f0;
+    background: #f0f0f0;
     border-radius: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+form>div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px;
+}
+
+form label {
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+    color: #0c1b2e;
+
 }
 
 form input[type="text"],
@@ -317,22 +338,38 @@ form input[type="email"],
 form input[type="date"],
 form input[type="time"],
 form input[type="number"],
-form input[type="textarea"] {
+form textarea {
+    font-size: 18px;
     padding: 10px;
     border: 1px solid #2E2E2E;
     border-radius: 10px;
+    background: #fff;
+    color: #0c1b2e;
 }
 
-form input[type="submit"] {
+.button-group button[type="submit"] {
     background-color: #0c1b2e;
     color: #f0f0f0;
-    padding: 15px;
+    padding: 12px 24px;
+    border-radius: 10px;
     border: none;
+}
+
+.button-group button[type="submit"]:hover {
+    background-color: #2E2E2E;
+}
+
+.button-group button[type="button"] {
+    background-color: #f0f0f0;
+    color: #0c1b2e;
+    padding: 12px 24px;
+    border: 1px solid #0c1b2e;
     border-radius: 10px;
 }
 
-form input[type="submit"]:hover {
-    background-color: #2E2E2E;
+.button-group button[type="button"]:hover {
+    background-color: #94D2BD;
+    color: #2E2E2E;
 }
 
 .horariosAside {
@@ -346,163 +383,96 @@ form input[type="submit"]:hover {
     margin-left: 30px;
 }
 
-/* REVISAR*/
-
-.sobreNos {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px 0 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.tituloPrincipal {
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
+.titulo {
+    font-size: 40px;
     color: #0c1b2e;
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .subtitulo {
-    color: #2E2E2E;
+    color: #0c1b2e;
     text-align: center;
-    font-size: 18px;
-    margin-bottom: 40px;
 }
 
 .historiaFilosofia {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    margin-bottom: 40px;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.historia, .textoFilosofia {
-    flex: 1 1 350px;
+.historia,
+.textoFilosofia {
     background: #f0f0f0;
-    border-radius: 16px;
-    padding: 32px 28px;
-    box-shadow: 0 2px 8px rgba(12,27,46,0.06);
+    border-radius: 10px;
+    padding: 20px;
     color: #2E2E2E;
-    font-size: 17px;
+    width: 45%;
+    margin: 10px;
 }
 
-.historia h2, .textoFilosofia h2 {
-    font-family: 'Playfair Display', serif;
+.historia h2,
+.textoFilosofia h2 {
     color: #0c1b2e;
-    font-size: 28px;
-    margin-top: 0;
-    margin-bottom: 18px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
-.imagemHistoria, .imagemFilosofia {
-    flex: 1 1 320px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.imagemHistoria img, .imagemFilosofia img {
+.imagemHistoria img,
+.imagemFilosofia img {
     width: 100%;
     max-width: 400px;
-    border-radius: 16px;
-    object-fit: cover;
-    box-shadow: 0 2px 8px rgba(12,27,46,0.10);
+    border-radius: 10px;
 }
 
 .filosofia {
     display: flex;
-    flex-wrap: wrap-reverse;
-    gap: 40px;
-    margin-bottom: 40px;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .equipeAmbiente {
-    margin-bottom: 40px;
     text-align: center;
 }
 
 .equipeAmbiente h2 {
-    font-family: 'Playfair Display', serif;
     color: #0c1b2e;
-    font-size: 28px;
-    margin-bottom: 10px;
     display: flex;
-    align-items: center;
+    font-size: 30px;
     justify-content: center;
-    gap: 10px;
 }
 
 .descricaoEquipe {
     color: #2E2E2E;
-    margin-bottom: 30px;
-    font-size: 17px;
 }
 
 .imagensAmbiente {
     display: flex;
-    gap: 24px;
+    gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .imagensAmbiente img {
-    width: 100%;
     max-width: 320px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 16px;
-    box-shadow: 0 2px 8px rgba(12,27,46,0.10);
+    border-radius: 10px;
+
 }
 
 .voltarHome {
     display: flex;
     justify-content: center;
-    margin: 40px 0 0 0;
 }
 
-.btnVoltar {
+.botaoVoltar {
     background-color: #0c1b2e;
     color: #f0f0f0;
     padding: 12px 32px;
     border-radius: 10px;
-    font-size: 16px;
-    border: none;
-    text-decoration: none;
-    transition: background 0.2s;
+    margin: 10px;
 }
 
-.btnVoltar:hover {
+.botaoVoltar:hover {
     background-color: #94D2BD;
     color: #2E2E2E;
-}
-
-.sobreNos h1,
-.sobreNos h2,
-.sobreNos p,
-.sobreNos a,
-.sobreNos .descricaoEquipe {
-    color: #222 !important;
-}
-.sobreNos .tituloPrincipal {
-    color: #0c1b2e !important;
-}
-.sobreNos .subtitulo {
-    color: #444 !important;
-}
-.sobreNos .historia, .sobreNos .textoFilosofia {
-    background: #f0f0f0;
-    color: #222 !important;
-}
-.sobreNos .equipeAmbiente h2 {
-    color: #0c1b2e !important;
 }
 
 .cardapio {
@@ -533,14 +503,181 @@ form input[type="submit"]:hover {
     font-weight: bold;
 }
 
-.reservaInicio {
-    border-radius: 10px;
-    color: #2E2E2E;
-    padding: 10px;
-    background-color: #f0f0f0;
-    margin-left: 10px;
+.textoFilosofia p,
+.historia p {
+    color: #0c1b2e;
 }
 
-.reservaInicio:hover {
+/* REVISAR */
+
+.containerContato {
+    width: 500px;
+    margin:10px auto;
+    background: #0c1b2e;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerContato .titulo {
+    color: #F0F0F0;
+}
+
+.containerContato .subtitulo {
+    color: #f0f0f0;
+    text-align: center;
+    font-weight: 100;
+}
+
+.contatoFlex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 10px auto;
+}
+
+.blocoForm {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 24px 20px 20px 20px;
+    width: 420px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px #0001;
+}
+
+.blocoForm h2 {
+    color: #0c1b2e;
+    font-size: 22px;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.blocoForm form > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.blocoForm label {
+    width: 110px;
+    text-align: right;
+    font-weight: bold;
+    color: #0c1b2e;
+}
+
+.blocoForm input[type="text"],
+.blocoForm input[type="email"],
+.blocoForm input[type="date"],
+.blocoForm input[type="time"],
+.blocoForm input[type="number"],
+.blocoForm textarea {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #2E2E2E;
+    border-radius: 10px;
+    background: #fff;
+    color: #0c1b2e;
+    flex: 1;
+}
+
+.blocoForm textarea {
+    min-height: 50px;
+    resize: vertical;
+}
+
+.blocoForm .button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.blocoForm .button-group button[type="submit"] {
+    background-color: #0c1b2e;
+    color: #f0f0f0;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.blocoForm .button-group button[type="submit"]:hover {
+    background-color: #005F73;
+}
+
+.blocoForm .button-group button[type="button"] {
+    background-color: #f0f0f0;
+    color: #0c1b2e;
+    padding: 10px 24px;
+    border: 1px solid #0c1b2e;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.blocoForm .button-group button[type="button"]:hover {
     background-color: #94D2BD;
+    color: #2E2E2E;
+}
+
+.blocoInfos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 320px;
+}
+
+.informacoes, .horarioContato {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px 18px;
+    color: #0c1b2e;
+    box-shadow: 0 2px 8px #0001;
+    font-size: 16px;
+}
+
+.informacoes h2, .horarioContato h2 {
+    color: #0c1b2e;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.informacoes h3 {
+    color: #0c1b2e;
+    font-size: 16px;
+    margin-bottom: 2px;
+    margin-top: 16px;
+}
+
+.informacoes h3:first-of-type {
+    margin-top: 0;
+}
+
+.informacoes p, .horarioContato p {
+    margin: 0 0 10px 0;
+    color: #0c1b2e;
+    font-size: 15px;
+}
+
+.informacoes p:last-child, .horarioContato p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .contatoFlex {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+        max-width: 98vw;
+    }
+    .blocoForm, .blocoInfos {
+        width: 100%;
+        min-width: 0;
+    }
 }
